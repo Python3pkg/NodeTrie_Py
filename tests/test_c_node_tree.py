@@ -52,7 +52,7 @@ class CNodeTreeTestCase(unittest.TestCase):
         self.assertTrue(len(result) == 1)
         # import ipdb; ipdb.set_trace()
         # Unicode query test
-        result = list(self.index.query(u'*'))
+        result = list(self.index.query('*'))
         self.assertTrue(len(result) == 1)
         self.assertTrue(result[0][0] == 'b1')
         result = list(self.index.query('b1'))
